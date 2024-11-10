@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-VariableFont_opsz,wght.ttf");
+}
+
+@font-face {
+    font-family: "EBGaramond";
+    src: url("../fonts/EBGaramond-VariableFont_wght.ttf");
+}
+
+body {
+    background-color: #131313;
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+    color: white;
+    font-family: "Inter", serif;
+    line-height: 21.6px;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+p {
+    margin-top: 3%;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+h4, h6 {
+    font-family: "EBGaramond", serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 29.7px;
+}
+
+h6 {
+    margin-top: 8px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h2 {
+    font-family: "EBGaramond", serif;
+    font-size: 28px;
+    margin-bottom: 5%;
+    font-weight: 500;
+}
+
+ul {
+    padding-top: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+li {
+    padding-bottom: 16px;
+}
+
+.container {
+    justify-content: center;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+}
+
+.secondary {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    gap: 15px
+}
+
+.secondary p, .secondary h3 {
+    margin: 0;
+}
+
+header h3, header p {
+    margin: 15px 0 0;
+}
+
+.info {
+    display: flex;
+    gap: 50px;
+}
+
+.title img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5em;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerContent p {
+    color: #CCCCCC;
+}
+
+.describe {
+    width: 35%;
+}
+
+.content-title {
+    display: block;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    padding: 1em 1em;
+}
+
+.content-title strong {
+    font-weight: 700;
+}
+
+.content-title h2 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.yellow {
+    background-color: #FEE42A;
+    width: 100%;
+}
+
+.yellow p, .yellow h3, .yellow h2, .yellow h4 {
+    color: #131313
+}
+
+.grey {
+    background-color: #343434;
+}
+
+.content-title {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.black-content .container, .black-content .content {
+    width: 100%;
+}
+
+.list-advice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.list-item {
+    border-radius: 30px;
+    padding: 2% 2%;
+    width: 320px;
+    gap: 62px;
+}
+
+.mainImg {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    gap: 15px;
+}
+
+footer {
+    margin-top: 2.5%;
+    margin-bottom: 1.5%;
+    border-top: #FEE42A solid;
+}
+
+footer a:link {
+    text-decoration: none;
+}
+
+.contact {
+    display: flex;
+    gap: 20px
+}
+
+@media (max-width: 991px) {
+    .secondary {
+        margin-top: 3%;
+    }
+}
+
+@media (max-width: 767px) {
+    .secondary {
+        margin-bottom: 10px;
+        margin-top: 5%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .container {
+        width: 759px;
+    }
+}
+
+@media (max-width: 575px) {
+    .secondary {
+        margin-top: 5%;
+    }
+
+    .container {
+        width: 560px;
+    }
+
+    .content-title {
+        width: 500px;
+        text-align: left;
+    }
+
+    .headerContent {
+        width: 500px;
+    }
+
+    .title img {
+        width: 565px;
+        height: 221px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .headerContent {
+        width: 335px;
+    }
+
+    .info {
+        display: block;
+    }
+
+    .info p {
+        padding-bottom: 10px;
+    }
+
+    .title img {
+        width: 352px;
+        height: 160px;
+    }
+
+    .content-title {
+        width: 335px;
+        margin: 0;
+        padding: 2% 2%;
+    }
+
+    .content-title h2 {
+        text-wrap: wrap;
+        text-align: left;
+        font-size: 28px;
+        text-indent: 20%;
+        line-height: 32px;
+    }
+
+    .describe {
+        width: 65%;
+    }
+
+    .list-item {
+        padding: 8% 8%;
+    }
+
+    .yellow {
+        width: 350px;
+    }
+
+}
